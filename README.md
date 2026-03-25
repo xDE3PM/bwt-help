@@ -1,4 +1,4 @@
-# 🚀 BWT-Uploader v1.0.5
+# 🚀 BWT-Uploader v1.0.6
 **Torrent Upload Assistant for BWTorrents.Tv**
 
 Upload torrents with ease using this assistant CLI.
