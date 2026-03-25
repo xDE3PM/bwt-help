@@ -76,7 +76,10 @@ python install.py
 ```bash
 bwt-uploader "path/to/your/file"
 ```
-
+or
+```bash
+bwt "path/to/your/file"
+```
 ---
 
 ### 5. Show help
