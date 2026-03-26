@@ -53,9 +53,8 @@ def get_config_path():
 
 def run_uploader(config_path):
     try:
-        print(f"\n🚀 Running: {PACKAGE_NAME} -C {config_path}\n")
+        
         subprocess.check_call([PACKAGE_NAME, "-C", config_path])
-        print("\nExecution completed successfully.")
 
     except FileNotFoundError:
         print(f"Command '{PACKAGE_NAME}' not found.")
