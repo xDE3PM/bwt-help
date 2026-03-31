@@ -1,5 +1,25 @@
-# 🚀 BWT-Uploader v1.0.6
-**Torrent Upload Assistant for BWTorrents.Tv**
+# 🚀 BWT-Uploader v1.0.7
+**Torrent Upload Assistant for BWTorrents.Tv*
+
+BWT-Uploader v1.0.7
+
+✨ Improvements
+
+- Enhanced performance and reliability across all commands
+- Optimized command execution for smoother user experience
+
+🐛 Bug Fixes
+
+- Fixed multiple reported bugs to improve overall stability
+
+🔄 New Feature
+
+- Added an alternative IMDb API
+  - If the primary (fast) API fails, the system will automatically switch to the backup IMDb API for better reliability
+
+---
+
+This update focuses on improving stability, performance, and ensuring uninterrupted access to IMDb data.
 
 Upload torrents with ease using this assistant CLI.
 
