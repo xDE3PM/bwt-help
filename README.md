@@ -66,6 +66,11 @@ config/example_config.py
 ```bash
 python install.py
 ```
+## * Install Letest version
+
+```bash
+pip install bwt-uploader==1.0.9
+```
 
 > Enter your config file path when prompted.
 
