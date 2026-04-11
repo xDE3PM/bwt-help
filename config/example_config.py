@@ -124,9 +124,11 @@ BBCODE_TEMPLATE = """
 
 DETAILED_BBCODE_TEMPLATE = """
 [center]
-[font=Courier New][size=6][color=#00BFFF][b]{title} ({year})[/b][/color][/size][/font]
+[font=Arial][size=6][color=#00BFFF][b][i]{title} ({year})[/i][/b][/color][/size][/font]
+
 
 [img]{poster}[/img]
+
 
 {imdb_btn}     {tmdb_btn}
 [/center]
