@@ -1,5 +1,4 @@
 # config.py v1.0.9
-
 # ============================================
 # MAIN CONFIGURATION
 # ============================================
@@ -9,7 +8,7 @@ config = {
     # TMDb API key (used to fetch movie/TV metadata like title, poster, cast, etc.)
     # Get your API key here: https://www.themoviedb.org/settings/api
     "TMDb": {
-        "API_KEY": "YOUR_TMDB_API_KEY"
+        "API_KEY": ""  # YOUR_TMDB_API_KEY
     },
 
     # Include IMDb & TMDb information in the description (True/False)
@@ -35,12 +34,12 @@ config = {
     # API keys for supported image hosts
     # Only required for the hosts you actually use
     "image_host_api_key": {
-        "Freeimage": "YOUR_FREEIMAGE_API_KEY",
-        "Imgbb": "YOUR_IMGBB_API_KEY",
-        "Imageride": "YOUR_IMAGERIDE_API_KEY",
-        "Lookmyimg": "YOUR_LOOKMYIMG_API_KEY",
-        "Onlyimg": "YOUR_ONLYIMG_API_KEY",
-        "PTScreen": "YOUR_PTSCREEN_API_KEY"
+        "Freeimage": "" ,  # YOUR_FREEIMAGE_API_KEY
+        "Imgbb": "" ,      # YOUR_IMGBB_API_KEY
+        "Imageride": "" ,  # YOUR_IMAGERIDE_API_KEY
+        "Lookmyimg": "" ,  # YOUR_LOOKMYIMG_API_KEY
+        "Onlyimg": "" ,    # YOUR_ONLYIMG_API_KEY
+        "PTScreen": ""     # YOUR_PTSCREEN_API_KEY
     },
 
     # ============================================
@@ -54,8 +53,8 @@ config = {
         "announce_url": "https://bwtorrents.tv/announce.php",
 
         # Login credentials
-        "username": "YOUR_USERNAME",
-        "password": "YOUR_PASSWORD"
+        "username": "",  # YOUR_USERNAME
+        "password": ""   # YOUR_PASSWORD
     },
 
     # ============================================
