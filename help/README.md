@@ -23,7 +23,7 @@ Upload torrents with ease using this assistant CLI.
 - 🖼️ **Automated Screenshot Capture & Upload**  
   - Captures high-quality screenshots and uploads them to your preferred image host
 
-- 🧾 **Rich BBCode Description Generator**  
+- 🧾 **BBCode Description Generator**  
   - Creates complete descriptions including poster, screenshots, technical info, and IMDb/TMDb/YouTube links
 
 - 📁 **Smart Category Detection**  
