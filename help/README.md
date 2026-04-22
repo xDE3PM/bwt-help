@@ -9,26 +9,34 @@ Upload torrents with ease using this assistant CLI.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🔍 **Auto Metadata Detection**
-  - Fetches IMDb ID, TMDb ID, trailer link, poster, and more
-- ⚙️ **Automatically Torrent Createor**
-  - Generates `.torrent` file with optimal settings
-- 📄 **Media Info Generator**
-  - Extracts and formats technical details using MediaInfo
-- 🖼️ **Automatically Screenshot Generate & Upload**
-  - Captures screenshots and uploads them to your preferred image host
-- 🧾 **BBCode Description Generator**
-  - Includes poster, screenshots, MediaInfo, IMDb/TMDb/YouTube links
-- 📁 **Smart Category Selector**
-  - Automatically detects or manually sets the correct category
-- 📡 **Freeleech Checker**
-  - Calculates and checks if upload qualifies for freeleech
-- 📤 **Automatically Upload Torrent**
-  - Full automation from detection to upload
-- 💻 **Command-line Friendly**
-  - Flexible CLI arguments with custom options
+- 🔍 **Automatic Metadata Detection**  
+  - Retrieves IMDb ID, TMDb ID, trailer links, posters, and other essential metadata
+
+- ⚙️ **Automated Torrent Creator**  
+  - Generates optimized `.torrent` files with best-practice settings
+
+- 📄 **Advanced Media Information Extraction**  
+  - Supports **MediaInfo**, **DVDInfo**, and **BDInfo** for comprehensive technical analysis across all formats
+
+- 🖼️ **Automated Screenshot Capture & Upload**  
+  - Captures high-quality screenshots and uploads them to your preferred image host
+
+- 🧾 **Rich BBCode Description Generator**  
+  - Creates complete descriptions including poster, screenshots, technical info, and IMDb/TMDb/YouTube links
+
+- 📁 **Smart Category Detection**  
+  - Automatically determines the correct category, with manual override support
+
+- 📡 **Freeleech Eligibility Checker**  
+  - Evaluates whether the upload qualifies for freeleech based on tracker rules
+
+- 📤 **Fully Automated Torrent Upload**  
+  - Seamless workflow from metadata detection to final upload
+
+- 💻 **CLI-Friendly & Highly Customizable**  
+  - Powerful command-line interface with flexible arguments and user-defined options
 
 ---
 
