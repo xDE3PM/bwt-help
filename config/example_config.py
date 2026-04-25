@@ -74,7 +74,7 @@ config = {
 
         # Banner for BD/DVD info (if used)
         "bdinfo_banner": "[img]https://i.ibb.co/npQd6NX/BDInfo.png[/img]",
-        "dvdinfo_banner": "[img]https://i.ibb.co/DfF7Pbt/Media-Info.png[/img]",
+        "dvdinfo_banner": "[img]https://i.ibb.co/DD8cgDV0/DVDinfo.png[/img]",
         
         # Section headers styling
         "sections": {
