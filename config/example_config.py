@@ -1,7 +1,6 @@
-# config.py v1.0.9
-# ============================================
+# config.py v1.1.0
+
 # MAIN CONFIGURATION
-# ============================================
 
 config = {
     
@@ -10,15 +9,25 @@ config = {
     "TMDb": {
         "API_KEY": ""  # YOUR_TMDB_API_KEY
     },
-
+    
     # Include IMDb & TMDb information in the description (True/False)
     "imdb_and_tmdb_info": True,
     
     # Directory where upload logs will be stored
-    "uploads_logs_directory": "Downloads/BWT-Uploader/Uploads", 
+    "uploads_logs_directory": "Uploads", 
     
     # Number of screenshots to capture from the video file
     "screenshots_number": 6,
+
+    # Screenshot capture options
+    # Apply HDR -> SDR tonemap only for HDR sources
+    "tonemap_hdr": True,
+    # FFmpeg tonemap method/parameters (used when tonemap_hdr is enabled)
+    "hdr_method": "reinhard:desat=0",
+    # Extract frames from keyframes only
+    "keyframes_only": True,
+    # PNG compression level (0-9)
+    "compression_level": 6,
 
     # Number of parallel threads for uploading screenshots
     "upload_threads": 3,
@@ -34,17 +43,16 @@ config = {
     # API keys for supported image hosts
     # Only required for the hosts you actually use
     "image_host_api_key": {
-        "Freeimage": "" ,  # YOUR_FREEIMAGE_API_KEY
-        "Imgbb": "" ,      # YOUR_IMGBB_API_KEY
-        "Imageride": "" ,  # YOUR_IMAGERIDE_API_KEY
-        "Lookmyimg": "" ,  # YOUR_LOOKMYIMG_API_KEY
-        "Onlyimg": "" ,    # YOUR_ONLYIMG_API_KEY
+        "Freeimage": "",   # YOUR_FREEIMAGE_API_KEY
+        "Imgbb": "",       # YOUR_IMGBB_API_KEY
+        "Imageride": "",   # YOUR_IMAGERIDE_API_KEY
+        "Lookmyimg": "",   # YOUR_LOOKMYIMG_API_KEY
+        "Onlyimg": "",     # YOUR_ONLYIMG_API_KEY
         "PTScreen": ""     # YOUR_PTSCREEN_API_KEY
     },
 
-    # ============================================
     # BWTorrents Tracker Configuration
-    # ============================================
+    
     "BWTorrents": {
         # Main site URL (alternatives available if down)
         "base_url": "https://bwtorrents.tv",
@@ -57,16 +65,15 @@ config = {
         "password": ""   # YOUR_PASSWORD
     },
 
-    # ============================================
     # BBCode Styling Configuration
-    # ============================================
+    
     "bbcode": {
 
         # Banner displayed above MediaInfo
         "mediainfo_banner": "[img]https://i.ibb.co/DfF7Pbt/Media-Info.png[/img]",
 
         # Banner for BD/DVD info (if used)
-        "bdinfo_banner": "[img]https://i.ibb.co/DfF7Pbt/Media-Info.png[/img]",
+        "bdinfo_banner": "[img]https://i.ibb.co/npQd6NX/BDInfo.png[/img]",
         "dvdinfo_banner": "[img]https://i.ibb.co/DfF7Pbt/Media-Info.png[/img]",
         
         # Section headers styling
@@ -81,13 +88,12 @@ config = {
 }
 
 
-# ============================================
 # MAIN DESCRIPTION TEMPLATE
-# ============================================
+
 # Default BBCode template for the torrent description.
 # NOTE:
 # You may customize the visual style and layout, but DO NOT remove the following placeholders:
-# {detailed_info}, {file_name}, {media_info}, {screenshot_bbcode}, etc.
+# {file_name}, {media_info}, {screenshot_bbcode}, etc.
 
 BBCODE_TEMPLATE = """
 {detailed_info}
@@ -112,9 +118,7 @@ BBCODE_TEMPLATE = """
 """
 
 
-# ============================================
 # DETAILED MOVIE INFO TEMPLATE (TMDb / IMDb)
-# ============================================
 
 # This block generates rich metadata (poster, cast, ratings, overview)
 # and is injected into the main BBCODE_TEMPLATE using {detailed_info}
@@ -123,18 +127,18 @@ BBCODE_TEMPLATE = """
 
 DETAILED_BBCODE_TEMPLATE = """
 [center]
-[font=Arial][size=6][color=#00BFFF][b][i]{title} ({year})[/i][/b][/color][/size][/font]
+[font=Courier New][size=6][color=#00BFFF][b]{title} ({year})[/b][/color][/size][/font]
 
 
 [img]{poster}[/img]
 
 
-{imdb_btn}     {tmdb_btn}
+{dblinks}
 [/center]
 
 [center]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/center]
 
-[font=Courier New][size=4]
+[quote][font=Courier New][size=4]
 [color=#FF9900][b]Genre........:[/b][/color] {genres}  
 [color=#FF9900][b]Released.....:[/b][/color] {release_date}  
 [color=#FF9900][b]Runtime......:[/b][/color] {runtime}  
