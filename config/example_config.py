@@ -138,7 +138,7 @@ DETAILED_BBCODE_TEMPLATE = """
 
 [center]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/center]
 
-[quote][font=Courier New][size=4]
+[font=Courier New][size=4]
 [color=#FF9900][b]Genre........:[/b][/color] {genres}  
 [color=#FF9900][b]Released.....:[/b][/color] {release_date}  
 [color=#FF9900][b]Runtime......:[/b][/color] {runtime}  
